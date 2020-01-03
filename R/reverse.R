@@ -6,12 +6,18 @@
 #' string_reverse("1234")
 #' @importFrom magrittr "%>%"
 #' @export
-string_reverse <- function(x)
+string_reverse <- function(x, convert = TRUE)
 {
   splits <- auto_split(x)
-  reversed <- rev(splits)
-  final_result <- paste(reversed, collapse = "")
-  return (final_result)
+  r <- rev(splits) %>% paste(collapse = "")
+  if(convert)
+  {
+    tryCatch(as.numeric(r), warning = function(c) return (r))
+  }
+  else
+  {
+    r
+  }
 }
 
 auto_split <- function(x)
