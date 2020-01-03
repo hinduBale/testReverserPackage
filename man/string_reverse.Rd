@@ -4,10 +4,12 @@
 \alias{string_reverse}
 \title{Reverses a string or number}
 \usage{
-string_reverse(x)
+string_reverse(x, convert = TRUE)
 }
 \arguments{
 \item{x}{A string or a number}
+
+\item{convert}{Flag to set whether the input number will be converted to strings or not}
 }
 \value{
 the reverse of input

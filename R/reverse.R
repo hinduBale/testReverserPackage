@@ -1,5 +1,6 @@
 #' Reverses a string or number
 #' @param x A string or a number
+#' @param convert Flag to set whether the input number will be converted to strings or not
 #' @return the reverse of input
 #' @examples
 #' string_reverse(1234)
