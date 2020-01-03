@@ -1,0 +1,17 @@
+Package: reverser
+Title: A better reverse function
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Rahul",
+           family = "Saxena",
+           role = c("aut", "cre"),
+           email = "rahulsaxena.pro@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: A reverse function to reverse some numbers and/or strings.
+Imports: magrittr
+License: MIT 
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: 
+    testthat
